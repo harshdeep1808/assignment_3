@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    margin-top: 0 !important;
+}
+nav{
+    background-color: #f48c06;
+    position: absolute;
+    width: 100%;
+}
+nav p{
+    display: inline-block;
+    padding: 12px;
+    font-size: 30px;
+    margin-left: 25px;
+    color:white;
+}
+ul{
+    list-style: none;
+    float: right;
+}
+li{
+    display: inline-block;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    
+}
+a:hover{
+    background-color: #cc6d01;
+
+}
+section{
+    width: 75vw;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+section figure{
+    width: 320px;
+    border: 1px solid white;
+    border-radius: 2%;
+    box-shadow: 0px 0px 20px black;
+    margin: 20px;
+    overflow: hidden;
+    justify-content: space-evenly;
+    transition: 100ms;
+    
+
+}
+section figure:hover{
+    transform: scale(1.1);
+}
+section figure img{
+    height: 280px;
+    width: 100%;
+}
+figcaption{
+    padding: 10px;
+}
+#slideshow{
+    width: 60vw;
+    height: 700px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+  }
+  
+  .slide{
+    float:left
+  }
+  
+  .slide img{
+  
+    height: 700px;
+    width: 60vw;
+  }
+  
+  .wrapper{
+    /* border: 5px solid black; */
+    width: calc(70vw*6);
+    animation:  15s ease infinite slider;
+  }
+  
+  @keyframes slider {
+    /* Calculate the margin-left for 
+    each of the slides */
+  
+    16% {
+      margin-left: 0px;
+    }
+    
+    32% {
+      margin-left: calc(-60vw * 1);
+    }
+    
+    48% {
+      margin-left: calc(-60vw * 2);
+    }
+    
+    64% {
+      margin-left: calc(-60vw* 3);
+    }
+  
+    80%{
+      margin-left:calc(-60vw*4);
+    }
+  
+    96%{
+      margin-left:calc(-60vw*5);
+    }
+  }
+  h1{
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #table{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border: white;
+      box-shadow: 0px 0px 10px black;
+      border-radius: 5px;
+  }
+  #free{
+      background-color: #f48c06;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+  form{
+      padding: 20px;
+  }
+  button{
+      width: 100%;
+      background-color: #f48c06;
+      color: white;
+  }
